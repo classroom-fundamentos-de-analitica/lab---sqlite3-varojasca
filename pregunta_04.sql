@@ -40,13 +40,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
-SELECT
-    k0,
-    avg(c21)
-FROM
-    tbl2
-
-JOIN tbl1
-ON tbl1.k1 = tbl2.k1
-WHERE  c13 > 400
-GROUP BY k0;
+ SELECT k0, c16 FROM tbl1 WHERE c16 LIKE (k0 ||'%');
